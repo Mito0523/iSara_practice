@@ -1,0 +1,2636 @@
+
+body{
+  margin-top: 100px;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* flex */
+nav,
+nav div{
+  display: flex !important;
+}
+.five-skill,
+.step_3,
+.merit_3,
+.teacher_name,
+.more_mess,
+.learning_ul,
+.benefit_flex,
+.founder,
+.sns{
+  display: flex;
+}
+
+.five-skill div,
+.merit_3,
+.flow_left{
+  flex-shrink: 1;
+}
+
+
+/* **********
+    header
+ ********* */
+
+header{
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background: #fff;
+}
+
+nav{
+  width: 1170px;
+  max-width: calc(100% - 20px);
+  min-height: 70px;
+  padding: 15px 0;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+/* title */
+
+.title p{
+  margin: 15px 0 0 5px;
+  font-weight: bolder;
+  font-size: 0.9em;
+}
+
+.title img{
+  width: 140px;
+  height: 45px;
+}
+
+
+/* 問い合わせ */
+
+.jump button{
+  width: 300px;
+  padding: 4% 5%;
+  border: none;
+  border-radius: 20px;
+  background: #da6b64;
+  color: #fff;
+  font-size: 0.9em;
+  letter-spacing: 0.15rem;
+}
+
+.jump form{
+  display: none;
+}
+
+
+/* *********
+    main
+*********** */
+
+/* home */
+.home{
+  position: relative;
+}
+
+.img_pc{
+  width: 100%;
+  max-height: 500px;
+  margin-top: 70px;
+}
+
+.img_sp{
+  display: none;
+}
+
+.home div{
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  bottom: 100px;
+  text-align: center;
+}
+
+.home p{
+  font-size: 1.8em;
+  font-weight: bolder;
+  line-height: 1.7em;
+}
+
+.logo{
+  width: 317px;
+  margin-bottom: 30px;
+}
+
+.home h1{
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+/* form */
+.form{
+  padding: 3%;
+  background: #ebb94d;
+  text-align: center;
+}
+
+.form p{
+  margin-bottom: 2%;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
+
+.form .text{
+  display: inline-block;
+  margin: 0 auto 3%;
+  background: #fff;
+  color: #c7254e;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+
+.form button{
+width: 87%;
+margin-bottom: 5%;
+padding: 2.5% 2%;
+background: #da6b64;
+color: #fff;
+font-size: 1.8em;
+font-weight: bolder;
+border: none;
+border-radius: 50px;
+}
+
+.br_sp{
+  display: none;
+}
+
+.sns div{
+width: 85px;
+height: 20px;
+margin: 0 .5%;
+background: #4267b2;
+border-radius: 3px;
+}
+
+.sns div:first-child{
+ background: #1b95e0;
+}
+
+.sns .share{
+ width: 75px;
+}
+
+.sns a,
+.sns i{
+ color: #fff;
+}
+
+/* intro */
+.intro {
+  width: 100%;
+  position: relative;
+}
+
+.intro img{
+width: 100%;
+}
+
+.intro-text{
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 120px;
+  text-align: center;
+}
+
+.brackets{
+  width: 70%;
+  margin: 0 auto;
+  padding: 15px 0;
+  position: relative;
+  color: #333;
+  text-align: center;
+}
+
+.brackets::before,
+.brackets::after{
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.brackets::before{
+  top: 0;
+  left: 0;
+  border-top: 4px solid #ebb94d;
+  border-left: 4px solid #ebb94d;
+}
+
+.brackets::after{
+  bottom: 0;
+  right: 0;
+  border-bottom: 4px solid #ebb94d;
+  border-right: 4px solid #ebb94d;
+}
+
+.intro-text h2{
+  margin: 20px auto;
+  font-size: 1.8em;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.intro-text p{
+  margin: 3% auto;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+
+.intro-text p span{
+  font-weight: bold;
+  border-bottom: 10px solid #ebb94d;
+}
+
+
+/* about */
+.about{
+  position: relative;
+  padding-bottom: 50px;
+  background: #fef5e0;
+  text-align: center;
+}
+
+.about-circle{
+  width: 80px;
+  height: 80px;
+  margin: -40px auto 0;
+  position: absolute;
+  left: 48%;
+  z-index: 5;
+  text-align: center;
+  background: #ebb94d;
+  color: #fff;
+  line-height: 80px;
+  border-radius: 50%;
+}
+
+.about h2{
+  margin: 20px auto;
+  font-size: 1.8em;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.about > .brackets{
+  top: 60px;
+}
+
+.about-p{
+  margin-top: 100px;
+  font-size: 1.2em;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.about-p span{
+  letter-spacing: 3px;
+}
+
+/* skill */
+.skill{
+  width: 92%;
+  margin: 30px auto 20px;
+  padding-bottom: 60px;
+  text-align: center;
+  background: #fff;
+  border: 2px solid #ebb94d;
+  border-radius: 5px;
+}
+
+.skill p{
+  margin: 30px auto 25px;
+  font-size: 1.2em;
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
+
+.five-skill{
+  margin: 0 18%;
+  text-align: center;
+  align-items: flex-end;
+}
+
+.five-skill div{
+  width: 100%;
+}
+
+.five-skill p{
+  width: 96%;
+  margin: auto;
+  padding-top: 10px;
+  font-size: 0.7em;
+  font-weight: normal;
+}
+
+
+/* second */
+.second{
+  position: relative;
+}
+
+.second img{
+  width: 100%;
+}
+
+.second-text{
+  position: absolute;
+  bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.second-text h2{
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
+}
+
+.second-text p{
+  font-size: 1.3em;
+  letter-spacing: 0.1rem;
+}
+
+.second-text span{
+  color: #ebb94d;
+}
+
+/* STEP */
+.step{
+  width: 400px;
+  margin: 1%;
+  padding: 30px 30px 20px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.step:first-child{
+  margin-left: 5%;
+}
+
+.step div{
+  margin-bottom:20px;
+  background:#ebb94d;
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  border-radius: 5px;
+}
+
+.step p{
+  color: #222;
+  font-size: 1rem;
+}
+
+.step .season{
+  font-size: 0.9em;
+}
+
+/* 3rd */
+.third{
+  margin: 0 auto;
+  padding: 2.5%;
+  background: #016ea9;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.third span{
+  color: #ebb94d;
+}
+
+/* learning */
+.learning{
+  margin: 5% auto;
+  text-align: center;
+}
+
+.learning h2{
+  margin-bottom: 50px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.learning h2 span{
+  font-size: 0.9rem;
+  font-weight: bolder;
+}
+
+.learning p{
+  margin-bottom: 40px;
+  font-size: 1.3em;
+  letter-spacing: 0.05em;
+}
+
+.learning p:last-child{
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.learning div{
+  margin-bottom: 30px;
+}
+
+.learning img{
+  width: 180px;
+  margin: 1.5%;
+}
+
+/* merit */
+.merit{
+  padding-top: 50px;
+  background: #fef5e0;
+}
+
+.brackets p,
+.brackets h3{
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 0.05em;
+}
+
+.brackets p{
+  font-size: 1.3em;
+}
+
+.brackets h3{
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.merit_3{
+  width: 95%;
+  margin: 3% auto;
+}
+
+.merit_3 div{
+  width: 94%;
+  margin: 0 1%;
+}
+
+.merit_3 img{
+  width: 360px;
+  height: 180px;
+}
+
+.merit_3 h4{
+  margin: 2% 0 4%;
+  color: #ebb94d;
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.merit_3 p{
+  letter-spacing: 0.15em;
+}
+
+.and_more{
+  margin: 2% 4%;
+  padding: 4% 4% 3%;
+  text-align: center;
+  border: 2px solid #ebb94d;
+  border-radius: 5px;
+  background: #fff;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.and_more h3{
+  color: #ebb94d;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.and_more div{
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.and_more p{
+  letter-spacing: 0.1rem;
+  line-height: 1.5em;
+}
+
+.no_teach{
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 4%;
+  text-align: center;
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
+  line-height: 1.6em;
+}
+
+/* teacher */
+.teacher{
+  position: relative;  
+}
+
+.teacher > img{
+  width: 100%;
+  max-height: 820px;
+}
+
+.member{
+  position: absolute;
+  bottom: 45px;
+  text-align: center;
+  color: #fff;
+}
+
+.member h3{
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.member p{
+  margin-bottom: 40px;
+  font-weight: bolder;
+}
+
+.teacher_name{
+  width: 94%;
+  flex-shrink: 1;
+  margin: 0 3%;
+}
+
+.teacher_name div{
+  width: 92%;
+  margin: 0 auto;
+}
+
+.teacher_name img{
+  border-radius: 50%;
+  margin-bottom: -30px;
+}
+
+.name{
+  height: 400px;
+  margin: 0 auto;
+  padding: 5% 3%;
+  border: 2px solid #fff;
+}
+
+.teacher_name p{
+  width: 85%;
+  margin: 10px auto;
+  letter-spacing: 0.12em;
+  line-height: 1.5em;
+}
+
+.teacher_name p:first-child{
+  margin-top: 20px;
+}
+
+.teacher_name p:last-child{
+  text-align: start;
+}
+
+/* Q&A */
+.ques{
+  position: relative;
+  padding: 40px 0;
+  background: #ebb94d;
+  color: #fff;
+  text-align: center;
+}
+
+.q_and_a{
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
+  text-align: center;
+  background: #fff;
+  color: #ebb94d;
+  line-height: 83px;
+  border-radius: 50%;
+}
+
+.brackets_white{
+  color: #fff;
+}
+
+.brackets_white::before,
+.brackets_white::after{
+   content: "";
+   position: absolute;
+   width: 50px;
+   height: 50px;
+ }
+
+.brackets_white::before{
+  top: 0;
+  left: 0;
+  border-top: 4px solid #fff;
+  border-left: 4px solid #fff;
+}
+
+.brackets_white::after{
+  bottom: 0;
+  right: 0;
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
+}
+
+.brackets_white p{
+  margin-bottom: 0;
+  font-size: 1.8em;
+}
+
+.q_and_a::before{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 48%;
+  border: 25px solid transparent;
+  border-top: 25px solid #ebb94d;
+ }
+
+.ans{
+  margin-top: 45px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.ans h3{
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.ans p{
+  margin-bottom: 30px;
+  font-weight: bolder;
+}
+
+.ans div{
+  margin-bottom: 40px;
+  font-size: 0.9em;
+}
+
+.enterprise{
+  width: 70%;
+  margin: 0 auto 5%;
+}
+
+.more_mess{
+  margin: 4%;
+}
+
+.more_mess img{
+  width: 250px;
+  height: 250px;
+  margin: 0 2%;
+  border: 2px solid #ebb94d;
+}
+
+.more_mess div{
+  color: grey;
+}
+
+.more_mess p{
+  padding: 3% 5% 0 3%;
+  font-size: 1.14em;
+  letter-spacing: 0.05em;
+}
+
+.more_mess p:last-child{
+  padding-top: 0;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  text-decoration: underline;
+}
+
+.more_mess span{
+  font-style: italic;
+}
+
+
+/* learning_content */
+.learning_content{
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.learning_content img{
+  width: 100%;
+  max-height: 803px;
+  margin: 0;
+}
+
+.learning_text{
+  position: absolute;
+  bottom: 30px;
+  left: 17%;
+  color: #fff;
+}
+
+.learning_text h3{
+  font-weight: bolder;
+  margin-bottom: 20px;
+  letter-spacing: 0.05em;
+}
+
+.learning_text p{
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.learning_ul ul{
+  width: 440px;
+  height: 100%;
+  margin: 3%;
+  padding: 0;
+  border: 2px solid #016ea9;
+  border-radius: 5px;
+  list-style-type: none;
+}
+
+.learning_ul li{
+  padding: 3% 5%;
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.learning_ul li:first-child{
+  padding: 4% 5%;
+  background: #016ea9;
+  color: #fff;
+  font-size: larger;
+}
+
+.learning_ul li:nth-child(n+1){
+  border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+.learning_ul li:last-child{
+  border-radius: 0 0 3px 3px;
+  border-bottom: none;
+}
+
+/* risk */
+.risk{
+  padding: 2.5%;
+  text-align: center;
+  background: #016ea9;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+  
+/* flow */
+.flow{
+  margin: 4% auto;
+  text-align: center;
+}
+
+.flow p{
+  margin-bottom: 50px;
+  font-size: 1.65em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.flow_img{
+  margin-bottom: 3%;
+}
+
+.flow_content{
+  display: flex;
+  margin: 0 3%;
+  padding: 1% 3.5%;
+  background: #fcf4e3;
+  border-radius: 8px;
+}
+
+.flow_content p{
+  font-size: 1.2em;
+}
+
+.flow_content input{
+  display: none;
+}
+
+.flow_left{
+  width: 240px;
+}
+
+.flow_left img{
+  margin: 10% auto;
+}
+
+.flow_left p{
+  margin: 0 5% 8%;
+}
+
+.flow_right{
+  flex-shrink: 4;
+  text-align: left;
+}
+  
+.flow_right p{
+  margin: 20px auto;
+  font-size: 1em;
+}
+.flow_right .txt_h{
+  width: 96%;
+  margin: 0%;
+  line-height: 3em;
+}
+
+.flow_right div{
+  font-size: 0.9em;
+  letter-spacing: 0.07em;
+}
+
+/* why */
+.why{
+  position: relative;
+}
+
+.why img{
+  width: 100%;
+}
+
+.why div{
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  color: #fff;
+  letter-spacing: 0.1em;
+}
+
+.why h3{
+  margin-bottom: 4%;
+  font-size: 1.4em;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+}
+
+.why p{
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+
+.why p:nth-of-type(1){
+  margin-bottom: 3%;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+.why p:nth-of-type(6){
+  margin: 3% 0 0;
+  font-size: 1.25em;
+}
+
+/* benefits */
+.benefits{
+  padding: 5% 0 3%;
+  text-align: center;
+  background: #f7c23c;
+}
+
+.benefits h3{
+  margin-bottom: 40px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.benefits p{
+  margin-bottom: 130px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.benefits span{
+  color: #fff;
+}
+
+.benefits_more{
+  position: relative;
+}
+
+.benefits_more h3{
+  width: 45%;
+  position: absolute;
+  top: -60px;
+  left: 28%;
+  background: #f7c23c;
+  font-size: 1.8em;
+  line-height: 1.5em;
+}
+
+.benefit_flex{
+  margin: 0 3%;
+  justify-content: center;
+  border: 2px solid #fff;
+}
+
+.benefit_flex div{
+  width: 250px;
+  height: 250px;
+  margin: 5%;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.benefit_flex h4{
+  margin: 20% auto 25px;
+  color: #ebb94d;
+}
+
+.benefit_flex p{
+  width: 88%;
+  margin: 0 auto;
+  font-size: 0.85em;
+  text-align: center;
+  letter-spacing: 0.15em;
+}
+.sp_only{
+  display: none;
+}
+
+/* detail */
+.detail{
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.detail img{
+  width: 100%;
+}
+
+.detail div{
+  width: 85%;
+  position: absolute;
+  bottom: 70px;
+  left: 10%;
+  margin: 0 auto;
+}
+
+.detail h3{
+  padding: 3% 5%;
+  font-size: 1.8em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+.detail p{
+  margin-bottom: 2%;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+/* message */
+.message{
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.message h2{
+  margin: 5% auto 3%;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.message p{
+  margin-bottom: 3%;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.founder{
+  width: 70%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.founder img{
+  width: 200px;
+  height: 150px;
+  margin: 0 3%;
+}
+
+.founder p{
+  font-size: 0.88em;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+}
+
+.founder p:nth-of-type(3),
+.founder p:nth-of-type(4){
+  margin:0;
+}
+
+/* document_request */
+.document_request{
+  padding: 5%;
+  text-align: center;
+  background: #ebb94d;
+}
+
+.document_request h2{
+  margin-bottom: 1.5%;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.document_request p{
+  font-weight: bold;
+}
+
+.document_request input,
+.document_request textarea{
+  width: 65%;
+  margin: 1%;
+  padding: 1.5% 0.5%;
+  font-size: 0.9em;
+  border: none;
+  border-radius: 5px;
+}
+
+.document_request textarea{
+  margin: 2.5%;
+  padding: 0.5% 0.5% 4%;
+}
+
+.document_request input:last-child{
+  padding: 1% 0.5%;
+  background: #da6b64;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0.8em;
+  border-radius: 50px;
+}
+
+/* asked */
+.asked{
+  width: 76%;
+  margin: 0 auto;
+}
+
+.asked h2{
+  margin: 5% auto;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.accbox{
+  margin: 2em 0;
+  padding: 0;
+}
+
+.accbox input{
+  position: absolute;
+  left: -50vw;
+}
+  
+.accbox label{
+  display: block;
+  margin: 1.5px 0;
+  padding: 2%;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all .5s;
+  border: 1px solid #dddcdc;
+}
+
+.accbox label::after{
+  position: absolute;
+  right: 13.5%;
+  content: '\f078';
+  font-family: "Font Awesome 5 free";
+  color: rgb(211, 211, 211);
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.accbox label:hover,
+.cssacc:checked + label{
+  text-decoration: underline;
+}
+
+.accbox label i{
+  color: #016ea9;
+}
+
+.accbox .accshow{
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: .6s;
+}
+
+.cssacc:checked + label + .accshow{
+  height: auto;
+  padding: 5px;
+  opacity: 1;
+}
+
+.accbox .accshow p{
+  margin:  15px 10px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+
+.cssacc:checked + label::after{
+  content: '\f077';
+}
+  
+/* *********
+  footer
+********** */
+footer{
+  padding: 3% 0 2%;
+  text-align: center;
+  background: rgb(236, 236, 236);
+  font-size: 0.7em;
+}
+
+footer p{
+  margin: 0 auto;
+  letter-spacing: 0.1em;
+}
+
+footer p:last-child{
+  margin-top: 3%;
+  letter-spacing: 0.15em;
+}
+
+.sns{
+  margin: 1% auto;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.7em;
+}
+
+
+/* =============
+  Page Top Btn
+ ============== */
+
+.scroll-top {
+  position: fixed;
+  right: 50px;
+  bottom: 90px;
+  z-index: 100;
+  width: 70px;
+  height: 70px;
+  background: rgb(236, 236, 236);
+  color: #333;
+  font-size: 2.6em;
+  font-weight: bold;
+  line-height: 70px;
+  text-align: center;
+}
+.scroll-top:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+
+
+
+ /* *************
+  Media Queries
+***************** */
+
+@media only screen and (min-width:991px) and (max-width:1190px){
+  /* ========
+      all
+  ========== */
+  
+
+  /* ========
+     header
+  =========== */
+  /* title */
+  .title p{
+    font-size: .8em;
+    vertical-align: bottom;
+    padding-top: 5px;
+  }
+
+  /* 問い合わせ */
+  .jump button{
+    width: 270px;
+    font-size: .8em;
+    letter-spacing: 0;
+  }
+
+  /* ===========
+      main
+  ============== */
+  /* home */
+  .home p{
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+  }
+  /* form */
+  .form p{
+    font-size: 1em;
+  }
+  .form .text{
+    width: 41%;
+    font-size: .9em;
+    margin-bottom: 1%;
+  }
+  .form button{
+    width: 90%;
+    padding: 2%;
+    font-size: 1.1em;
+  }
+  .form button ~ p{
+    font-size: 1.2em;
+    letter-spacing: 0;
+  }  
+  /* twitter / FB / シェアボタン */
+  .sns div{
+    font-size: 0.8em;
+  }
+  /* intro */
+  .intro-text{
+    margin-top: 5%;
+  }
+  .intro-text h2{
+    font-size: 1.5em;
+  }
+  .intro-text p{
+    font-size: 1em;
+  }
+  .intro-text p span{
+    border-bottom: 6px solid #ebb94d;
+  }
+  /* about */
+  .about h2{
+    font-size: 1.5em;
+  }
+  .about-p{
+    font-size: 1em;
+  }
+  .skill{
+    padding-bottom: 40px;
+  }
+  .skill p{
+    font-size: 1em;
+  }
+  .five-skill{
+    margin: 0 18%;
+  }
+  .five-skill p{
+    font-size: 0.8em;
+    letter-spacing: 0;
+  }
+  /* second */
+  .second img{
+    height: 790px;
+  }
+  .second-text{
+    left: 20%;
+    bottom: 50px;
+  }
+  .second-text h2{
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  .second-text p{
+    font-size: 1em;
+  }
+  .step_3{
+    flex-direction: column;
+  }
+  .step:first-child,
+  .step{
+    margin: 2% 20%;
+    width: 430px;
+    font-size: .8em;
+  }
+  /* 3rd */
+  .third{
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    line-height: 1.7em;
+  }
+  /* learning */
+  .learning h2{
+    font-size: 1.5em;
+  }
+  .learning p{
+    font-size: 1em;
+    letter-spacing: 0.1em;
+  }
+  .learning p:last-child{
+    font-size: 0.9em;
+  }
+  .merit_3 div{
+    text-align: center;
+  }
+  .merit_3 div img {
+    width: 300px;
+  }
+  .merit_3 div h4{
+    font-size: 1em;
+  }
+  .merit_3 div p{
+    width: 85%;
+    margin: 0 auto;
+    font-size: 0.9em;
+    text-align: start;
+    letter-spacing: 0.12em;
+  }
+  .and_more{
+    margin: 2% 5%;
+  }
+  .and_more h3{
+    font-size: 1.5em;
+  }
+  .and_more div{
+    font-size: 1em;
+  }
+  .and_more p{
+    font-size: 0.9em;
+  }
+  .no_teach{
+    width: 72%;
+    margin: 3% auto 0;
+    padding-bottom: 3%;
+    font-size: 0.8em;
+    letter-spacing: normal;
+    line-height: normal;
+  }
+  /* teacher */
+  .member h3{
+    font-size: 1.5em;
+  }
+  .teacher_name p{
+    font-weight: normal;
+    font-size: 0.9em;
+  }
+  .name{
+    height: 365px;
+  }
+  /* Q&A */
+  .q_and_a{
+    font-size: 1.4em;
+  }
+  .ans h3{
+    font-size: 1.5em;
+  }
+  .ans p{
+    font-size: 0.9em;
+  }
+  .ans div{
+    font-size: 0.8em;
+  }
+  .enterprise{
+    margin: 0 0 5%;
+  }
+  .more_mess{
+    margin: 4% 0;
+  }
+  .more_mess img{
+    margin: 0 2% 0 0;
+  }
+  .more_mess p {
+    padding: 3% 6% 0 3%;
+  }
+  /* learning_content */
+  .learning_text{
+    left: 26%;
+  }
+  .learning_text h3{
+    font-size: 1.5em;
+  }
+  .learning_text p{
+    font-size: 0.9em;
+  }
+  .learning_ul ul{
+    width: 300px;
+  }
+  .learning_ul li{
+    font-size: 0.9em;
+    padding: 5%;
+  }
+  .learning_ul li:first-child{
+    font-size: 1em;
+  }
+  /* risk */
+  .risk{
+    font-size: 1em;
+  }
+  /* flow */
+  .flow{
+    margin-bottom: 2%;
+  }
+  .flow p{
+    font-size: 1.5em;
+  }
+  .flow_left p{
+    font-size: 1.2em;
+  }
+  .flow_right p{
+    font-size: 0.9em;
+  }
+  .flow_right div{
+    font-size: 0.8em;
+    letter-spacing: normal;
+  }
+  /* why */
+  .why img{
+    height: 400px;
+  }
+  .why div{
+    bottom: 70px;
+    left: 60px;
+    letter-spacing: normal;
+  }
+  .why p{
+    font-size: 0.9em;
+    margin-bottom: 1.5%;
+  }
+  .why p:nth-of-type(1){
+    font-size: 0.8em;
+  }
+  .why p:nth-of-type(6){
+    font-size: 1em;
+  }
+  /* benefits */
+  .benefits h3{
+    font-size: 1.5em;
+  }
+  .benefits p{
+    font-size: 0.9em;
+  }
+  .benefits_more h3{
+    top: -40px;
+    left: 35%;
+    width: 32%;
+  }
+  /* detail */
+  .detail h3{
+    font-size: 1.5em;
+  }
+  .detail p{
+    font-size: 1em;
+    letter-spacing: 0.1em;
+  }
+  /* message */
+  .message{
+    letter-spacing: 0.1em;
+  }
+  .message h2{
+    font-size: 1.5em;
+  }
+  .message p{
+    font-size: 0.9em;
+    margin-bottom: 5%;
+  }
+  .founder{
+    width: 84%;
+  }
+  .founder p{
+    margin-bottom: 4%;
+  }
+  .founder p:first-of-type,
+  .founder p:nth-of-type(6){
+    margin-bottom: 2%;
+  }
+  /* document_request */
+  .document_request{
+    padding: 5% 0;
+  }
+  .document_request h2{
+    margin-bottom: 2.5%;
+    font-size: 1.5em;
+  }
+  .document_request {
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+  }
+  /* asked */
+  .asked{
+    width: 90%;
+  }
+  .asked h2{
+    font-size: 1.5em;
+  }
+  .accbox label{
+    font-size: 1em;
+  }
+  .accbox label::after{
+    right: 7.5%;
+  }
+  .accbox .accshow p{
+    margin: 15px 8px;
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px){  
+    /* ========
+      all
+  ========== */
+  /* flex */
+  .step_3,
+  .merit_3,
+  .teacher_name,
+  .learning_ul,
+  .benefit_flex,
+  .founder{
+    flex-direction: column;
+  }
+
+
+
+
+  /* ===========
+      header 
+  ============== */
+  
+
+
+
+  /* ===========
+       main
+  ============== */
+  /* home */
+  .img_pc{
+    height: 500px;
+  }
+  .home{
+    letter-spacing: 0.1em;
+  }
+  .home p{
+    font-size: 1.5em;
+  }
+  .home h1{
+    font-size: 1em;
+  }
+  /* form */
+  .form p{
+    font-size: 1em;
+  }
+  .form .text{
+    font-size: 0.9em;
+    font-weight: normal;
+    width: auto;
+    display: inline-block;
+    padding: 2px;
+  }
+  .form button ~ p{
+    font-size: 1.1em;
+    letter-spacing: normal;
+  }
+  .form button{
+    font-size: 1.2em;
+  }
+  /* intro */
+  .intro img{
+    height: 580px;
+  }
+  .intro-text{
+    bottom: 150px;
+  }
+  .intro-text .brackets{
+    width: 100%;
+  }
+  .intro-text > .brackets::before{
+    left: 2%;
+  }
+  .intro-text > .brackets::after{
+    right: 2%;
+  }
+  .intro-text h2{
+    font-size: 1.5em;
+  }
+  .intro-text p{
+    font-size: 1em;
+  }
+  /* about */
+  .about h2{
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+  }
+  .about-p,
+  .skill p{
+    font-size: 1em;
+  }
+  .five-skill{
+    margin: 0;
+  }
+  /* second */
+  .second img{
+    height: 780px;
+  }
+  .second-text{
+    bottom: 50px;
+    left: 7%;
+  }
+  .second-text h2{
+    font-size: 1.5em;
+  }
+  .second-text p{
+    font-size: 1em;
+  }
+  .step{
+    width: 380px;
+    margin: 1% auto;
+  }
+  .step:first-child{
+    margin-left: auto;
+  }
+  .step p{
+    font-size: 0.9em;
+  }
+  .step .season{
+    font-size: 0.7em;
+  }
+  /* 3rd */
+  .third{
+    font-size: 1em;
+    letter-spacing: 0.1em;
+  }
+  /* learning */
+  .learning img{
+    width: 140px;
+  }
+  .learning h2{
+    font-size: 1.5em;
+  }
+  .learning p{
+    font-size: 1em;
+  }
+  .learning p:last-child{
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+  }
+  /* merit */
+  .brackets p{
+    font-size: 1em;
+  }
+  .brackets h3{
+    font-size: 1.5em;
+  }
+  .merit_3{
+    text-align: center;
+  }
+  .merit_3 img{
+    width: 300px;
+  }
+  .merit_3 h4{
+    font-size: 1em;
+    margin: 2% 0 1%;
+  }
+  .merit_3 p{
+    margin: 0 0 4% 5%;
+    text-align: left;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+  }
+  .and_more{
+    margin: 2% 7%;
+  }
+  .and_more h3{
+    font-size: 1.5em;
+  }
+  .and_more div{
+    font-size: 1em;
+  }
+  .and_more p{
+    font-size: 0.9em;
+  }
+  .no_teach{
+    font-size: 0.7em;
+  }
+  /* teacher */
+  .teacher > img{
+    min-height: 1610px;
+    margin: 0;
+  }
+  .member h3{
+    font-size: 1.5em;
+  }
+  .member p{
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+  }
+  .teacher_name div{
+    width: 98%;
+    font-size: 0.95em;
+    font-weight: lighter;
+    margin-top: 3%;
+  }
+  .teacher_name img{
+    margin-bottom: -65px;
+  }
+  .name{
+    height: 245px;
+    padding: 3%;
+  }
+  .name p{
+    width: 100%;
+  }
+  /* Q&A */
+  .ques{
+    padding: 35px 0 45px;
+  }
+  .brackets_white p{
+    font-size: 1.2em;
+    line-height: 2em;
+  }
+  .ans h3{
+    font-size: 1.5em;
+  }
+  .ans p{
+    font-size: 0.9em;
+  }
+  .ans div{
+    font-size: 0.7em;
+  }
+  .enterprise{
+    width: 100%;
+    margin: 0%;
+  }
+  .more_mess{
+    margin: 2% 2% 4%;
+  }
+  .more_mess img{
+    width: 300px;
+    height: 300px;
+    margin: 0;
+  }
+  /* learning_content */
+  .learning_content img{
+    min-height: 1100px;
+  }
+  .learning_text{
+    left: 13%;
+    bottom: 50px;
+  }
+  .learning_text h3{
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+  }
+  .learning_text p{
+    font-size: 0.9em;
+    margin-bottom: 7%;
+  }
+  .learning_ul ul{
+    width: 580px;
+    margin: 1.5%;
+  }
+  .learning_ul li{
+    font-size: 0.9em;
+    padding: 2%;
+  }
+  .learning_ul li:first-child{
+    font-size: 1em;
+    padding: 3%;
+  }
+  /* risk */
+  .risk{
+    font-size: 1em;
+  }
+  /* flow */
+  .flow p{
+    font-size: 1.5em;
+  }
+  .flow_img{
+    width: 90%;
+    margin-bottom: 4%;
+  }
+  .flow_content{
+    margin: 0 5%;
+    padding: 1% 3%;
+  }
+  .flow_left p{
+    font-size: 1.2em;
+  }
+  .flow_right p{
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+  }
+  .flow_right div{
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+  }
+  /* why */
+  .why div{
+    bottom: 5%;
+    left: 60px;
+  }
+  .why h3{
+    font-size: 1.5em;
+    margin-bottom: 6%;
+  }
+  .why p{
+    font-size: 0.9em;
+  }
+  .why p:nth-of-type(1){
+    font-size: 0.7em;
+  }
+  .why p:nth-of-type(6){
+    font-size: 1em;
+  }
+  /* benefit */
+  .benefits h3{
+    font-size: 1.5em;
+  }
+  .benefits p{
+    font-size: 0.9em;
+  }
+  .benefits_more h3{
+    width: 38%;
+    top: -50px;
+    left: 32%;
+    font-size: 1.5em;
+  }
+  .benefit_flex{
+    margin: 0 5%;
+    padding: 4%;
+  }
+  .benefit_flex div{
+    margin: 1% auto;
+  }
+  /* detail */
+  .detail img{
+    height: 490px;
+  }
+  .detail div{
+    bottom: 60px;
+  }
+  .detail h3{
+    font-size: 1.5em;
+  }
+  .detail p{
+    margin-bottom: 4%;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+  }
+  .brackets{
+    width: 73%;
+  }
+  /* message */
+  .message h2{
+    font-size: 1.5em;
+    margin-bottom: 5%;
+  }
+  .message p{
+    margin-bottom: 6%;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+  }
+  .founder{
+    width: 94%;
+  }
+  .founder img{
+    width: auto;
+    height: auto;
+    margin: 0 0 3%;
+  }
+  .founder p{
+    font-size: 0.9em;
+    margin-bottom: 3%;
+  }
+  .founder p:nth-of-type(1){
+    margin-bottom: 2%;
+  }
+  .founder p:nth-of-type(6){
+    margin-bottom: 1%;
+  }
+  /* document_request */
+  .document_request h2{
+    font-style: 1.5em;
+    margin-bottom: 3%;
+  }
+  .document_request p{
+    margin-bottom: 4%;
+  }
+  .document_request input,
+  .document_request textarea{
+    width: 80%;
+    padding: 2% 1%;
+  }
+  .document_request textarea{
+    margin: 5%;
+  }
+  /* asked */
+  .asked{
+    width: 88%;
+  }
+  .asked h2{
+    font-size: 1.5em;
+  }
+  .accbox label{
+    font-size: 1em;
+  }
+  .accbox label::after{
+    right: 10%;
+  }
+  .accbox .accshow p{
+    font-size: 0.9em;
+  }
+}
+
+
+
+@media only screen and (max-width:768px){
+  /* flex */
+  .jump form,
+  .flow_content,
+  .founder,
+  .step_3,
+  .learning_ul,
+  .merit_3,
+  .teacher_name,
+  .benefit_flex{
+    flex-direction: column;
+  }
+
+  nav{
+    padding: 0;
+    max-width: 100%;
+    height: 60px;
+  }
+  /* title */
+  .title{
+    /* display: flex; */
+    flex-direction: column-reverse;
+    margin: 0 0 1% 1%;
+  }
+  .title p{
+    font-size: 0.6em;
+    margin: 0;
+    padding: 0;
+  }
+  .title img{
+    width: 100px;
+    height: 40px;
+  }
+  /* 問い合わせ */
+  .jump button{
+    display: none;
+  }
+  .jump form{
+    display: flex;
+    padding: 2%;
+    background: #da6b64;
+    width: 75px;
+  }
+  .jump form img{
+    width: 20px;
+    margin: 10% auto 0;
+  }
+  .jump form p{
+    margin: 0 auto 1em;
+    color: #fff;
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+    text-decoration: underline;
+  }
+
+  /* ==========
+      main
+  ============ */
+  /* home */
+  .img_pc{
+    display: none;
+  }
+  .img_sp{
+    display: block;
+    width: 100%;
+    height: 380px;
+  }
+  .home div{
+    bottom:20px;
+  }
+  .home p{
+    font-size: 1.2em;
+  }
+  .home h1{
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+  }
+  /* form */
+  .form p{
+    font-size: 0.9em;
+  }
+  .form .text{
+    font-size: 0.8em;
+    font-weight: normal;
+    width: auto;
+    display: inline-block;
+    padding: 2px;
+  }
+  .form button{
+    width: 98%;
+    padding: 2.5% 32%;
+    font-size: 1.2em;
+  }
+  .br_sp{
+    display: block;
+  }
+  /* intro */
+  .intro img{
+    height: 680px;
+  }
+  .intro h2{
+    font-size: 1.1em;
+    line-height: 2.5em;
+  }
+  .intro-text{
+    bottom: 110px;
+  }
+  .intro-text p{
+    font-size: 0.9em;
+  }
+
+  .intro-text > .brackets{
+    padding-top: 3%;
+  }
+
+
+  .brackets::before,
+  .brackets::after{
+    width: 30px;
+    height: 30px;
+  }
+  .brackets::before{
+    left: -10px;
+  }
+  .brackets::after{
+    right: -10px;
+  }
+  .intro-text p span {
+    border-bottom: 8px solid #ebb94d;
+  }
+  /* about */
+  .about-circle{
+    left: 46%;
+    width: 65px;
+    height: 65px;
+    margin: -35px auto 0;
+    line-height: 65px;
+    font-size: 0.8em;
+  }
+  .about h2{
+    font-size: 1.1em;
+    line-height: 2.5em;
+  }
+  .about-p{
+    font-size: 0.9em;
+    margin-top: 80px;
+  }
+  .skill p{
+    font: 1em;
+    letter-spacing: 0.05em;
+  }
+  .five-skill{
+    margin: 0 12%;
+  }
+  .five-skill img{
+    width: 25%;
+  }
+  .five-skill .sp_wid{
+    width: 80%;
+  }
+  .five-skill p{
+    font-size: 0.6em;
+    letter-spacing: normal;
+  }
+  /* second */
+  .second img{
+    height: 580px;
+  }
+  .second-text{
+    width: 100%;
+    bottom: 30px;
+    left: 0;
+  }
+  .second-text h2{
+    font-size: 1.1em;
+  }
+  .second-text p{
+    font-size: 0.8em;
+  }
+  .step_3{
+    margin-top: 5%;
+  }
+  .step{
+    width: 93%;
+    margin: 1% auto;
+    padding: 2%;
+  }
+  .step:first-child{
+    margin: 0 auto 1.5%;
+  }
+  .step div{
+    font-size: 0.8em;
+    margin: 0 auto 1.5%;
+    width: 90%;
+  }
+  .step p{
+    font-size: 0.7em;
+    margin-bottom: 0;
+  }
+  .step .season{
+    font-size: 0.7em;
+    margin-bottom: 1%;
+  }
+  /* 3rd */
+  .third p{
+    font-size: 0.6em;
+    letter-spacing: 0.05em;
+    margin-bottom: 0%;
+  }
+  /* learning */
+  .learning h2{
+    font-size: 1.1em;
+  }
+  .learning p{
+    font-size: 1em;
+    margin-bottom: 0;
+  }
+  .learning p:last-child{
+    font-size: 0.8em;
+  }
+  .learning div{
+    margin-bottom: 0;
+  }
+  .learning img{
+    width: 120px;
+    margin: 3%;
+  }
+  /* merit */
+  .brackets p{
+    font-size: 1em;
+  }
+  .brackets h3{
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+  }
+  .merit_3{
+    text-align: center;
+  }
+  .merit_3 div{
+    width: 100%;
+    margin: 0;
+  }
+  .merit_3 img{
+    height: 115px;
+  }
+  .merit_3 h4{
+    font-size: 1em;
+    margin: 1% auto;
+    text-align: center;
+  }
+  .merit_3 p{
+    width: 97%;
+    margin: 0 auto 3%;
+    font-size: 0.75em;
+    text-align: left;
+  }
+  .and_more{
+    margin: 2% 2.5%;
+    padding: 1%;
+  }
+  .and_more h3{
+    font-size: 1.1em;
+    margin-top: 1%;
+  }
+  .and_more div{
+    font-size: 0.9em;
+  }
+  .and_more p{
+    font-size: 0.6em;
+    letter-spacing: normal;
+  }
+  .br_pc{
+    display: none;
+  }
+  .no_teach{
+    width: 97%;
+    font-size: 0.75em;
+    letter-spacing: normal;
+  }
+  /* teacher */
+  .teacher .img_sp{
+    min-height: 1120px;
+  }
+  .member{
+    bottom: 35px;
+  }
+  .member h3{
+    font-size: 1.1em;
+  }
+  .member p{
+    font-size: 0.8em;
+  }
+  .teacher_name{
+    width: 96%;
+    margin: 0 auto;
+  }
+  .teacher_name div{
+    width: 100%;
+    margin: 1% auto;
+  }
+  .teacher_name img{
+    width: 18%;
+    height: auto;
+    margin-bottom: -60px;
+  }
+  .name{
+    height: 195px;
+    padding: 5% 1%;
+  }
+  .name p{
+    width: 100%;
+    margin: 0;
+    font-size: 0.75em;
+    font-weight: normal;
+  }
+  /* Q&A */
+  .ques{
+    padding: 20px 0;
+  }
+  .q_and_a{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 0.8em;
+  }
+  .brackets_white p{
+    font-size: 0.9em;
+    line-height: 2.5em;
+    letter-spacing: 0.1em;
+  }
+  .q_and_a::before{
+    border: 15px solid transparent;
+    border-top: 15px solid #ebb94d;
+  }
+  .ans{
+    margin-top: 3%;
+  }
+  .ans h3{
+    font-size: 1.1em;
+  }
+  .ans p,
+  .ans div{
+    font-size: 0.75em;
+  }
+  .enterprise{
+    width: 100%;
+  }
+  .more_mess{
+    margin: 4% 0;
+  }
+  .more_mess img{
+    width: 40%;
+    height: 40%;
+    margin: 0 1%;
+  }
+  .more_mess p{
+    padding: 0 3%;
+    font-size: .85em;
+  }
+  .more_mess p:last-child{
+    font-size: .9em;
+  }
+
+  /* learning_content */
+  .learning_content img{
+    min-height: 1030px;
+  }
+  .learning_text{
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+  }
+  .learning_text h3{
+    font-size: 1.1em;
+  }
+  .learning_text p{
+    font-size: 0.7em;
+  }
+  .learning_ul ul{
+    margin: 3% auto;
+  }
+  .learning_ul li{
+    padding: 3%;
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+  }
+  .learning_ul li:first-child{
+    padding: 2%;
+    font-size: 0.9em;
+  }
+  /* risk */
+  .risk{
+    padding-bottom: 0.5%;
+    font-size: 1em;
+  }
+  /* flow */
+  .flow{
+    margin-bottom: 6%;
+  }
+  .flow p{
+    font-size: 1.1em;
+    margin-bottom: 4%;
+  }
+  .flow > img{
+    display: none;
+  }
+  .flow_content{
+    margin: 1% 2%;
+    padding: 0;
+    border-radius: 3px;
+  }
+  .flow_left{
+    width: 100%;
+  }
+  .flow_left img{
+    width: 40px;
+    height: 40px;
+    margin: 1% 2%;
+  }
+  .flow_left p{
+    margin: auto 0;
+    vertical-align: middle;
+    font-size: 0.95em;
+  }
+  .flow_content input{
+    display: block;
+    position: absolute;
+    left: -50vw;
+  }
+  .flow_left label{
+    display: flex;
+    margin: 1.5px 0;
+    cursor: pointer;
+    transition: all .5s;
+  }
+  .flow_left:hover{
+    text-decoration: underline;
+  }
+  .flow_content .flow_left label::after{
+    content: '\f078';
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    padding-right: 8px;
+    position: absolute;
+    right: 3%;
+    margin-top: 15px;
+  }
+  .flow_right{
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: .8s;
+    /* background: pink; */
+  }
+  .flow_acc:checked + .flow_left + .flow_right{
+    height: auto;
+    padding: 5px;
+    opacity: 1;
+  }
+  .flow_acc:checked + .flow_left label::after{
+    content: '\f077';
+  }
+  .flow_right div{
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+    margin: 12px;
+  }
+  .flow_right p{
+    margin: 15px 10px;
+    font-size: 0.75em;
+    letter-spacing: 0.1em;
+  }
+  .flow_right .txt_h{
+    line-height: inherit;
+    padding-bottom: 3%;
+  }
+  /* why */
+  .why img{
+    height: 330px;
+  }
+  .why div{
+    width: 100%;
+    bottom: 25px;
+    left: 0;
+  }
+  .why h3{
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .why p{
+    font-size: 0.8em;
+    margin: 0 0 1% 3%;
+  }
+  .why p:nth-of-type(1){
+    font-size: 0.7em;
+  }
+  .why p:nth-of-type(6){
+    font-size: 0.9em;
+    margin-left: 3%;
+  }
+  /* benefits */
+  .benefits h3{
+    font-size: 1.1em;
+  }
+  .benefits p{
+    font-size: 0.75em;
+    margin-bottom: 12%;
+  }
+  .benefit_flex{
+    padding: 3%;
+  }
+  .benefit_flex div{
+    display: flex;
+    width: 88%;
+    height: auto;
+    margin: 2% 0 2% 14%;
+    background: #f7c23c;
+  }
+  .benefit_flex h4{
+    background: #fff;
+    border-radius: 50%;
+    font-size: 0.8em;
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+    margin: auto;
+  }
+  .benefits_more h3{
+    width: 30%;
+    left: 35%;
+    margin-top: 25px;
+  }
+  .no_sp{
+    display: none;
+  }
+  .benefits_more .sp_only{
+    display: block;
+    margin: auto 7%;
+    color: #fff;
+    text-align: left;
+  }
+  /* detil */
+  .detail img{
+    height: 460px;
+  }
+  .detail div{
+    left: 8%;
+    bottom: 8%;
+  }
+  .detail h3{
+    font-size: 1.2em;
+    line-height: 2em;
+  }
+  .detail div > h3{
+    line-height: 1.8em;
+  }
+  .detail p{
+    margin-top: 2.5%;
+    font-size: 0.75em;
+    letter-spacing: 0.1em;
+  }
+  /* message */
+  .message h2{
+    margin-bottom: 5%;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+  }
+  .message p{
+    font-size: 1em;
+    margin-bottom: 1%;
+  }
+  .founder{
+    width: 96%;
+  }
+  .founder img{
+    width: 100%;
+    height: auto;
+    margin: 1% auto;
+  }
+  .founder p{
+    font-size: 0.9em;
+    margin-bottom: 3%;
+  }
+  /* document_request */
+  .document_request{
+    padding: 5% 0;
+  }
+  .document_request h2{
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    margin-bottom: 4%;
+  }
+  .document_request p{
+    font-size: 0.75em;
+    letter-spacing: 0.1em;
+  }
+  .document_request form{
+    width: 100%;
+  }
+  .document_request input,
+  .document_request textarea{
+    width: 94%;
+    margin: 2%;
+    padding: 2% 0.5%;
+  }
+  .document_request textarea{
+    padding: 0.5% 0.5% 7%;
+  }
+  /* asked */
+  .asked{
+    width: 96%;
+  }
+  .asked h2{
+    font-size: 1.1em;
+  }
+  .accbox label{
+    margin: 0.3% 0;
+    padding: 1%;
+    font-size: 0.9em;
+  }
+  .accbox label::after{
+    right: 4.5%;
+  }
+  .accbox .accshow p{
+    margin: 15px 11px;
+    font-size: 0.75em;
+    letter-spacing: 0.15em;
+  }
+  .cssacc:checked + label + .accshow{
+    padding-bottom: 2%;
+  }
+  /* footer */
+  footer{
+    padding-bottom: 0;
+  }
+  footer p{
+    margin: 0.5% auto;
+    font-size: 0.8em;
+    letter-spacing: 0.15em;
+  }
+  .sns{
+    font-weight: bold;
+  }
+  .sns div{
+    width: 75px;
+  }
+  footer p:last-child{
+    margin-top: 5%;
+  }
+
+  /* Page Top Btn */
+  .scroll-top {
+    right: 10px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    line-height: 50px;
+  }
+  
+  
+}
