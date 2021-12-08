@@ -2349,6 +2349,7 @@ footer p:last-child{
   }
   .learning_ul ul{
     margin: 3% auto;
+    width: 100%;
   }
   .learning_ul li{
     padding: 3%;
@@ -2422,7 +2423,6 @@ footer p:last-child{
     overflow: hidden;
     opacity: 0;
     transition: .8s;
-    /* background: pink; */
   }
   .flow_acc:checked + .flow_left + .flow_right{
     height: auto;
